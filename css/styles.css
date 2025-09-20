@@ -11925,6 +11925,310 @@ html {
     transform: scale(1.02);
 }
 
+/* Dark Theme Implementation */
+:root {
+  --dark-bg-primary: #1a1a1a;
+  --dark-bg-secondary: #2d2d2d;
+  --dark-bg-tertiary: #3a3a3a;
+  --dark-text-primary: #ffffff;
+  --dark-text-secondary: #e0e0e0;
+  --dark-text-muted: #c0c0c0;
+  --dark-hover-bg: #404040;
+  --dark-border: #4a4a4a;
+  --dark-badge-bg: #4a4a4a;
+  --dark-badge-text: #ffffff;
+}
+
+/* Global dark theme overrides */
+body {
+  background-color: var(--dark-bg-primary) !important;
+  color: var(--dark-text-primary) !important;
+}
+
+/* Masthead dark theme */
+.masthead {
+  background: linear-gradient(135deg, var(--dark-bg-primary) 0%, var(--dark-bg-secondary) 100%);
+}
+
+.masthead h1, .masthead .h1 {
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* About section dark theme */
+.about-section {
+  background: linear-gradient(to bottom, var(--dark-bg-primary) 0%, var(--dark-bg-secondary) 75%, var(--dark-bg-tertiary) 100%);
+}
+
+/* Skills section dark theme */
+.skills-section {
+  background-color: var(--dark-bg-secondary) !important;
+}
+
+.skills-section .card {
+  background-color: var(--dark-bg-tertiary) !important;
+  border: 1px solid var(--dark-border);
+  color: var(--dark-text-primary);
+}
+
+.skills-section .card:hover {
+  background-color: var(--dark-hover-bg) !important;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.1);
+}
+
+.skills-section .card-body {
+  color: var(--dark-text-primary);
+}
+
+.skills-section .card-text {
+  color: var(--dark-text-secondary) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  font-weight: 500;
+}
+
+/* Experience section dark theme */
+.experience-section {
+  background: linear-gradient(135deg, var(--dark-bg-secondary) 0%, var(--dark-bg-tertiary) 100%);
+}
+
+.experience-section .card {
+  background-color: var(--dark-bg-primary) !important;
+  border: 1px solid var(--dark-border);
+  color: var(--dark-text-primary);
+}
+
+.experience-section .card:hover {
+  background-color: var(--dark-hover-bg) !important;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.1);
+}
+
+.experience-section .card-body {
+  color: var(--dark-text-primary);
+}
+
+.experience-section .card-text {
+  color: var(--dark-text-secondary) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  font-weight: 500;
+}
+
+/* Projects section dark theme */
+.projects-section {
+  background-color: var(--dark-bg-primary) !important;
+}
+
+.projects-section .featured-text {
+  background-color: var(--dark-bg-secondary);
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.projects-section .featured-text h4 {
+  color: var(--dark-text-primary);
+}
+
+.projects-section .featured-text p {
+  color: var(--dark-text-secondary) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  font-weight: 500;
+}
+
+.projects-section .project {
+  background-color: var(--dark-bg-tertiary) !important;
+}
+
+.projects-section .project-text {
+  color: var(--dark-text-primary);
+}
+
+.projects-section .project-text h4 {
+  color: var(--dark-text-primary);
+}
+
+.projects-section .project-text p {
+  color: var(--dark-text-secondary) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  font-weight: 500;
+}
+
+/* Contact section dark theme */
+.contact-section {
+  background-color: var(--dark-bg-primary) !important;
+}
+
+.contact-section .card {
+  background-color: var(--dark-bg-secondary) !important;
+  border: 1px solid var(--dark-border);
+  color: var(--dark-text-primary);
+}
+
+.contact-section .card:hover {
+  background-color: var(--dark-hover-bg) !important;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.1);
+}
+
+.contact-section .card-body {
+  color: var(--dark-text-primary);
+}
+
+.contact-section .card h4 {
+  color: var(--dark-text-primary);
+}
+
+.contact-section .small {
+  color: var(--dark-text-secondary);
+}
+
+.contact-section .social a {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--dark-text-secondary);
+  transition: all 0.3s ease;
+}
+
+.contact-section .social a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--dark-text-primary);
+  transform: translateY(-2px);
+}
+
+/* Footer dark theme */
+.footer {
+  background-color: var(--dark-bg-primary) !important;
+  color: var(--dark-text-secondary);
+}
+
+/* Navigation dark theme */
+.navbar {
+  background-color: var(--dark-bg-secondary) !important;
+  border-bottom: 1px solid var(--dark-border);
+}
+
+.navbar-brand {
+  color: var(--dark-text-primary) !important;
+}
+
+.navbar-nav .nav-link {
+  color: var(--dark-text-secondary) !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--dark-text-primary) !important;
+}
+
+/* Badge dark theme - High contrast */
+.badge.bg-primary {
+  background-color: var(--dark-badge-bg) !important;
+  color: var(--dark-badge-text) !important;
+  border: 1px solid #666666;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.badge.bg-light {
+  background-color: var(--dark-badge-bg) !important;
+  color: var(--dark-badge-text) !important;
+  border: 1px solid #666666;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Enhanced span/badge contrast */
+span.badge {
+  background-color: var(--dark-badge-bg) !important;
+  color: var(--dark-badge-text) !important;
+  border: 1px solid #666666;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.5px;
+}
+
+/* Additional span element enhancements */
+span {
+  color: var(--dark-text-primary) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Button dark theme */
+.btn-primary {
+  background-color: var(--dark-bg-tertiary);
+  border-color: var(--dark-border);
+  color: var(--dark-text-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-hover-bg);
+  border-color: var(--dark-hover-bg);
+  color: var(--dark-text-primary);
+}
+
+.btn-outline-light {
+  border-color: var(--dark-text-secondary);
+  color: var(--dark-text-secondary);
+}
+
+.btn-outline-light:hover {
+  background-color: var(--dark-bg-tertiary);
+  border-color: var(--dark-text-primary);
+  color: var(--dark-text-primary);
+}
+
+/* Text color overrides - Enhanced contrast */
+.text-white {
+  color: var(--dark-text-primary) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.text-white-50 {
+  color: var(--dark-text-secondary) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.text-black {
+  color: var(--dark-text-primary) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.text-black-50 {
+  color: var(--dark-text-secondary) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Enhanced text contrast for all elements */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--dark-text-primary) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+p {
+  color: var(--dark-text-secondary) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.card-text {
+  color: var(--dark-text-secondary) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.small {
+  color: var(--dark-text-muted) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Background color overrides */
+.bg-light {
+  background-color: var(--dark-bg-secondary) !important;
+}
+
+.bg-black {
+  background-color: var(--dark-bg-primary) !important;
+}
+
 /* Enhanced footer */
 .footer {
     padding: 2rem 0;
